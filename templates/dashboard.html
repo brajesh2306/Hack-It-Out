@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Forecast Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>Welcome, {{ session['user'] }}!</h1>
+    <button onclick="logout()">Logout</button>
+    <h2>Renewable Energy Forecast</h2>
+    <canvas id="forecastChart"></canvas>
+</body>
+</html>
